@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>给你的小礼物</title>
+    <style>
+        /* 这里是 CSS 样式，用来让网页更好看，你可以自由修改 */
+        body {
+            background: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .card {
+            max-width: 600px;
+            background: white;
+            border-radius: 32px;
+            padding: 40px 32px;
+            box-shadow: 0 20px 35px -10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .message {
+            font-size: 1.3rem;
+            line-height: 1.5;
+            color: #333;
+            margin-bottom: 32px;
+            white-space: pre-wrap;
+        }
+        audio {
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 40px;
+        }
+        .footer {
+            margin-top: 32px;
+            color: #aaa;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- 这里写你想说的话，用 <br> 标签换行 -->
+        <div class="message">
+            亲爱的朋友，<br>
+            这有一首歌想送给你。<br>
+           虽然 zwb 早几天才学玩极限 已经够慢了<br>
+ 	   但相较于你学 java 的 路程还算多一点点哦[呲牙]
+        </div>
+
+        <!-- 音乐播放器：把 你的音乐链接.mp3 替换成真正的音乐网址 -->
+        <audio controls src="你的音乐链接.mp3"></audio>
+        <div class="footer">点一下播放键 ▶️</div>
+    </div>
+</body>
+</html>
